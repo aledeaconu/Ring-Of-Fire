@@ -1,0 +1,31 @@
+<mat-dialog-content>
+  <p>Edit your name</p>
+  <mat-form-field>
+    <mat-label>Add new name</mat-label>
+    <input matInput [(ngModel)]="name" (ngModelChange)="changeName($event)" />
+  </mat-form-field>
+  <p>Pick another avatar</p>
+  <img
+    (click)="pickAvatar(i)"
+    *ngFor="let i of [1, 2, 3, 4, 5]"
+    src="./../../assets/avatars/image_part_00{{ i }}.jpg"
+  />
+  <div class="delete-btn">
+    
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button (click)="dialogRef.close()">Close</button>
+
+  <button mat-button [mat-dialog-close]="{ name, avatar }" cdkFocusInitial>
+    Ok
+  </button>
+
+    <button color="warn" mat-button [mat-dialog-close]="'DELETE'" cdkFocusInitial>
+        Delete
+      </button>
+
+  
+</mat-dialog-actions>
+

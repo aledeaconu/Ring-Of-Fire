@@ -1,0 +1,57 @@
+.players-mobile {
+  font-family: "Lobster";
+  display: flex;
+  align-items: center;
+  justify-content: normal;
+  flex-direction: row;
+  background-color: rgba(24, 85, 38, 0.7);
+  height: 100px;
+  width: 150px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding-left: 20px;
+
+  @media (max-width: 750px) {
+    border-radius: 20px;
+    height: 62px;
+    width: 120px;
+    margin: 16px;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+}
+
+img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 16px;
+  object-fit: cover;
+  @media (max-width: 750px) {
+    margin-right: 0px;
+    margin-bottom: 5px;
+    width: 40px;
+    height: 40px;
+    object-fit: fill;
+  }
+}
+
+.player-active {
+  border: 2px solid black;
+  background: #174d23;
+}

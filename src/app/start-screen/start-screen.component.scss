@@ -1,0 +1,63 @@
+.start-screen {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .start-label {
+    position: absolute;
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      font-family: "Wisper";
+      color: red;
+      position: absolute;
+      top: 72%;
+      left: 51%;
+      width: 100%;
+      font-size: 7vw;
+      font-weight: 600;
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(204, 2, 2);
+      }
+    }
+
+    @media (max-width: 1500px) {
+      p {
+        font-size: 8vw;
+      }
+    }
+
+    @media (max-width: 1250px){
+      p{
+        font-size: 10vw;
+      }
+    }
+    
+    @media (max-width: 1000px){
+      p{
+        font-size: 12vw;
+      }
+    }
+
+    @media (max-width: 800px){
+      p{
+        font-size: 13vw;
+      }
+    }
+  }
+
+  @media (max-width: 600px){
+    p{
+      font-size: 14vw;
+    }
+  }
+}

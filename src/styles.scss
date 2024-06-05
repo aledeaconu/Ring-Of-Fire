@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+  
+}
+@font-face {
+    font-family: 'Wisper';
+    src: url(./assets/fonts/Whisper/Whisper-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url(./assets/fonts/Lobster/Lobster-Regular.ttf);
+}
+html, body { height: 100%; overflow: hidden;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@media(max-width: 1010px){
+    body{
+        overflow: hidden;
+    }
+}
+
+@media(min-width: 750px){
+    .hide-desktop{
+        display: none;
+        color: white
+    }
+}
+
+@media(max-width: 750px){
+    .hide-mobile{
+        display: none;
+       
+    }
+}

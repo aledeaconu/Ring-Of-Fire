@@ -51,18 +51,21 @@
       src="./../../assets/cards/{{ game.currentCard }}.png"
     />
   </div>
-  <div class="game-over" *ngIf="game.gameOver">
-    <h1 style="font-family: 'Lobster'; color: black">Game over</h1>
-    <p>Play again?</p>
-    <div>
-      <button class="yes-button" (click)="restartGame()">Yes</button>
-      <button class="no-button" (click)="backToStartScreen()">No</button>
-    </div>
-  </div>
-</div>
+ 
 
 <button mat-fab color="primary" class="btn-add" (click)="openDialog()">
   <mat-icon>add</mat-icon>
 </button>
 
 <app-game-info [card]="game.currentCard" class="pin-bottom"></app-game-info>
+
+ 
+<div class="game-over" *ngIf="game.gameOver">
+  <h1 style="font-family: 'Lobster'; color: black">Game over</h1>
+  <p>Play again?</p>
+  <div>
+    <button class="yes-button" (click)="restartGame()">Yes</button>
+    <button class="no-button" (click)="backToStartScreen()">No</button>
+  </div>
+</div>
+</div>

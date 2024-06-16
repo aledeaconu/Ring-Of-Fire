@@ -8,7 +8,10 @@
   justify-content: center;
 
   .start-label {
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     img {
       width: 100%;
@@ -17,10 +20,7 @@
     p {
       font-family: "Wisper";
       color: red;
-      position: absolute;
-      top: 72%;
-      left: 51%;
-      width: 100%;
+     margin-top: 40px;
       font-size: 7vw;
       font-weight: 600;
       cursor: pointer;
@@ -43,6 +43,9 @@
     }
     
     @media (max-width: 1000px){
+      img{
+        width: 70%;
+      }
       p{
         font-size: 12vw;
       }
